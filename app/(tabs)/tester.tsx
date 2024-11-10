@@ -1,20 +1,19 @@
-import { Image, StyleSheet, Platform, SafeAreaView, ScrollView, Text} from 'react-native';
-import React from 'react';
+import { Image, StyleSheet, Platform, SafeAreaView, ScrollView, Text, Button} from 'react-native';
+import React, { useState } from 'react';
 import { useEvents } from '@/hooks/useEvents';
 import EventOnDisplay from '@/components/EventOnDisplay';
+import EventPagePopup from '@/components/EventPagePopup';
 
 export default function tester() {
     const events = useEvents();
+
+    const [eventPopupVisible, eventSetPopupVisible] = useState(false);
+    const eventTogglePopup = () => {
+        eventSetPopupVisible(!eventPopupVisible);
+    };
+
     return (
-        <SafeAreaView style={styles.container}>
-            <ScrollView>
-                <EventOnDisplay eventIndex='0'/>
-                <EventOnDisplay eventIndex='1'/>
-                <EventOnDisplay eventIndex='2'/>
-                <EventOnDisplay eventIndex='3'/>
-                <EventOnDisplay eventIndex='4'/>
-            </ScrollView>
-        </SafeAreaView>
+        <EventPagePopup city="Troy"/>
     );
 }
 

@@ -13,7 +13,6 @@ export default function Page() {
 
 
     const openPopup = (index: number) => {
-        console.log('Popup opened for event index:', index);  // Check if this logs
         setSelectedEventIndex(index);
     };
     
@@ -22,11 +21,12 @@ export default function Page() {
         setSelectedEventIndex(null);
     };
 
-    const saratogaEvents = events.filter(event => event.eventcity === "Saratoga Springs" && event.eventstate === "NY");
+    const ssEvents = events
+        .map((event, index) => ({ ...event, originalIndex: index }))
+        .filter(event => event.eventcity === "Saratoga Springs" && event.eventstate === "NY");
 
   return(
     <View style={styles.container}>
-      <Text>Saratoga Springs, NY</Text>
       <View style={styles.imageContainer}>
         {/* Base Image */}
         <Image 
@@ -34,7 +34,7 @@ export default function Page() {
             style={styles.baseImage}
         />
         {/* Overlay Images for SS Events */}
-        {saratogaEvents.map((event, index) => {
+        {ssEvents.map((event) => {
           // Determine the icon color based on wheelchair accessibility
           let iconSource;
           if (event.accessibility.wheelchair === "High") {
@@ -47,8 +47,8 @@ export default function Page() {
 
           return (
             <Pressable 
-              key={index}
-              onPress={() => openPopup(index)}
+              key={event.originalIndex}
+              onPress={() => openPopup(event.originalIndex)}
               style={[styles.overlayButton, { top: event.ycord, left: event.xcord }]}
             >
               <Image 
@@ -91,16 +91,18 @@ const styles = StyleSheet.create({
         position: 'absolute',
         width: 65, // set desired width for overlay image
         height: 65, // set desired height for overlay image
-        zIndex: 2,
         top: '-20%',
+        left: '-10%',
+        zIndex: 2,
     },
     overlayButton: {
         position: 'absolute',
         width: 65,
         height: 65,
+        top: '-20%',
+        left: '-10%',
         justifyContent: 'center',
         alignItems: 'center',
-        top: '-20%',
     },
     buttonImage: {
         width: '100%', // Full size of overlayButton
