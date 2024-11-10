@@ -23,10 +23,9 @@ export default function HomeScreen() {
       <SafeAreaView style={styles.container}>
         <ScrollView style={styles.container}>
           <SafeAreaView style={styles.container}>
-            <Text>{events[49].eventstate}</Text>
+            <Text style={styles.title}>AccesACity</Text>
           </SafeAreaView>
           <Link href="/states" style={styles.button1}>TESTCOORDINATES</Link>
-          <Link href="/testCoordinates2" style={styles.button1}>TESTCOORDINATES2</Link>
 
         </ScrollView>
       </SafeAreaView>
@@ -39,29 +38,40 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
   container: {
+    zIndex: 1,
+
     flex: 1,
     padding: 20,
     backgroundColor: 'white',
   },
   innerContainer: {
+    zIndex: 1,
+
     padding: 16,
   },
   titleContainer: {
-    
+    zIndex: 1,
+
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
   },
   stepContainer: {
+    zIndex: 1,
+
     gap: 8,
     marginBottom: 8,
   },
   button1: {
+    zIndex: 1,
+
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
   reactLogo: {
+    zIndex: 1,
+
     height: 178,
     width: 290,
     bottom: 0,
@@ -69,8 +79,20 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
   imagebg: {
+    zIndex: 1,
+
     height: height,
     width: width,
     position: 'absolute',
   },
+  title: {
+    flex: 1,
+    zIndex: 2,
+    top: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'center',
+    fontSize: 24
+  },
+
 });
