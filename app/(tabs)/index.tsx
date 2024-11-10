@@ -1,4 +1,5 @@
 import { Image, StyleSheet, ScrollView, StatusBar, Platform, SafeAreaView, Text, ScrollViewComponent} from 'react-native';
+import { Dimensions } from "react-native";
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
@@ -11,6 +12,8 @@ import {SafeAreaProvider} from 'react-native-safe-area-context';
 import { View } from 'react-native';
 import { setBackgroundColorAsync } from 'expo-system-ui';
 
+var width = Dimensions.get('window').width; //full width
+var height = Dimensions.get('window').height; //full height
 
 export default function HomeScreen() {
   const events = useEvents();
@@ -63,6 +66,11 @@ const styles = StyleSheet.create({
     width: 290,
     bottom: 0,
     left: 0,
+    position: 'absolute',
+  },
+  imagebg: {
+    height: height,
+    width: width,
     position: 'absolute',
   },
 });
