@@ -13,7 +13,6 @@ export default function Page() {
 
 
     const openPopup = (index: number) => {
-        console.log('Popup opened for event index:', index);  // Check if this logs
         setSelectedEventIndex(index);
     };
     
@@ -28,14 +27,13 @@ export default function Page() {
 
   return(
     <View style={styles.container}>
-      <Text>New York City, NY</Text>
       <View style={styles.imageContainer}>
         {/* Base Image */}
         <Image 
             source={require('../assets/images/new york city.png')}
             style={styles.baseImage}
         />
-        {/* Overlay Images for SS Events */}
+        {/* Overlay Images for nyc Events */}
         {nycEvents.map((event) => {
           // Determine the icon color based on wheelchair accessibility
           let iconSource;

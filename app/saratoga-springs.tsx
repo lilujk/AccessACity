@@ -13,7 +13,6 @@ export default function Page() {
 
 
     const openPopup = (index: number) => {
-        console.log('Popup opened for event index:', index);  // Check if this logs
         setSelectedEventIndex(index);
     };
     
@@ -28,7 +27,6 @@ export default function Page() {
 
   return(
     <View style={styles.container}>
-      <Text>Saratoga Springs, NY</Text>
       <View style={styles.imageContainer}>
         {/* Base Image */}
         <Image 
