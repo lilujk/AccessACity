@@ -4,6 +4,7 @@ import {View, Text, Button, StyleSheet } from 'react-native';
 import { GestureHandlerRootView, ScrollView } from 'react-native-gesture-handler';
 import EventOnDisplay from './EventOnDisplay';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { Link } from 'expo-router';
 
 const EventPagePopup = ({city}: {city: string }) => {
     const events = useEvents();
@@ -19,6 +20,7 @@ const EventPagePopup = ({city}: {city: string }) => {
         <GestureHandlerRootView style={styles.overlay}>
                 <View style={styles.container}>
                     <Text style={styles.title}>Events in {city}!</Text>
+                    <Link href="/">Add an Event!</Link>
                     <View style={styles.searchbar}>
                         <Text>Search for Events by Tag...</Text>
                         <Text>&#128269;</Text>
