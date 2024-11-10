@@ -22,7 +22,9 @@ export default function Page() {
         setSelectedEventIndex(null);
     };
 
-    const NYCEvents = events.filter(event => event.eventcity === "New York City" && event.eventstate === "NY");
+    const nycEvents = events
+        .map((event, index) => ({ ...event, originalIndex: index }))
+        .filter(event => event.eventcity === "New York City" && event.eventstate === "NY");
 
   return(
     <View style={styles.container}>
@@ -33,8 +35,8 @@ export default function Page() {
             source={require('../assets/images/new york city.png')}
             style={styles.baseImage}
         />
-        {/* Overlay Images for NYC Events */}
-        {NYCEvents.map((event, index) => {
+        {/* Overlay Images for SS Events */}
+        {nycEvents.map((event) => {
           // Determine the icon color based on wheelchair accessibility
           let iconSource;
           if (event.accessibility.wheelchair === "High") {
@@ -47,8 +49,8 @@ export default function Page() {
 
           return (
             <Pressable 
-              key={index}
-              onPress={() => openPopup(index)}
+              key={event.originalIndex}
+              onPress={() => openPopup(event.originalIndex)}
               style={[styles.overlayButton, { top: event.ycord, left: event.xcord }]}
             >
               <Image 
@@ -91,16 +93,18 @@ const styles = StyleSheet.create({
         position: 'absolute',
         width: 65, // set desired width for overlay image
         height: 65, // set desired height for overlay image
-        zIndex: 2,
         top: '-20%',
+        left: '-10%',
+        zIndex: 2,
     },
     overlayButton: {
         position: 'absolute',
         width: 65,
         height: 65,
+        top: '-20%',
+        left: '-10%',
         justifyContent: 'center',
         alignItems: 'center',
-        top: '-20%',
     },
     buttonImage: {
         width: '100%', // Full size of overlayButton

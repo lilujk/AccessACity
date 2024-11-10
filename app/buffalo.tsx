@@ -22,19 +22,21 @@ export default function Page() {
         setSelectedEventIndex(null);
     };
 
-    const buffaloEvents = events.filter(event => event.eventcity === "Buffalo" && event.eventstate === "NY");
+    const buffaloEvents = events
+        .map((event, index) => ({ ...event, originalIndex: index }))
+        .filter(event => event.eventcity === "Buffalo" && event.eventstate === "NY");
 
   return(
     <View style={styles.container}>
-      <Text>buffalo, NY</Text>
+      <Text>Buffalo, NY</Text>
       <View style={styles.imageContainer}>
         {/* Base Image */}
         <Image 
             source={require('../assets/images/buffalo.png')}
             style={styles.baseImage}
         />
-        {/* Overlay Images for Buffalo Events */}
-        {buffaloEvents.map((event, index) => {
+        {/* Overlay Images for buffalo Events */}
+        {buffaloEvents.map((event) => {
           // Determine the icon color based on wheelchair accessibility
           let iconSource;
           if (event.accessibility.wheelchair === "High") {
@@ -47,8 +49,8 @@ export default function Page() {
 
           return (
             <Pressable 
-              key={index}
-              onPress={() => openPopup(index)}
+              key={event.originalIndex}
+              onPress={() => openPopup(event.originalIndex)}
               style={[styles.overlayButton, { top: event.ycord, left: event.xcord }]}
             >
               <Image 
@@ -91,16 +93,18 @@ const styles = StyleSheet.create({
         position: 'absolute',
         width: 65, // set desired width for overlay image
         height: 65, // set desired height for overlay image
-        zIndex: 2,
         top: '-20%',
+        left: '-10%',
+        zIndex: 2,
     },
     overlayButton: {
         position: 'absolute',
         width: 65,
         height: 65,
+        top: '-20%',
+        left: '-10%',
         justifyContent: 'center',
         alignItems: 'center',
-        top: '-20%',
     },
     buttonImage: {
         width: '100%', // Full size of overlayButton
