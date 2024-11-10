@@ -20,10 +20,12 @@ const EventPagePopup = ({city}: {city: string }) => {
         <GestureHandlerRootView style={styles.overlay}>
                 <View style={styles.container}>
                     <Text style={styles.title}>Events in {city}!</Text>
-                    <Link href="/">Add an Event!</Link>
                     <View style={styles.searchbar}>
                         <Text>Search for Events by Tag...</Text>
                         <Text>&#128269;</Text>
+                    </View>
+                    <View style={styles.rightpush}>
+                        <Link style={styles.addEventButton} href="/addEventPage">Add an Event!</Link>
                     </View>
                     <ScrollView>
                         {cityEvents.map((item, index) => (
@@ -71,9 +73,10 @@ const styles = StyleSheet.create({
     title: {
         padding: 10,
         fontSize: 36,
-        marginTop: 10,
+        marginTop: 40,
         marginBottom: 10,
-        color: 'blue',
+        color: 'navy',
+        fontWeight: 'bold',
     },
     list: {
         display: 'flex',
@@ -94,6 +97,23 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
+        fontStyle: 'italic',
+    },
+    addEventButton: {
+        borderRadius: 10,
+        borderWidth: 2,  
+        borderColor: 'navy',
+        padding: 20,
+        margin: 20,
+        height: 60,
+        width: 125,
+        color: 'white',
+        backgroundColor: 'navy',
+    },
+    rightpush: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'flex-end',
     }
 });
 

@@ -4,7 +4,7 @@ import { useEvents } from '@/hooks/useEvents';
 import EventOnDisplay from '@/components/EventOnDisplay';
 import EventPagePopup from '@/components/EventPagePopup';
 
-export default function tester() {
+export default function yourCity() {
     const events = useEvents();
 
     const [eventPopupVisible, eventSetPopupVisible] = useState(false);

@@ -30,11 +30,10 @@ export default function profile() {
     <SafeAreaView style={styles.container}>
         <ScrollView style={styles.scrollContainer}>
             <View style={styles.profileHeader} >
-                <Image style={styles.profileIcon} source={require('../../assets/images/profileIcon.png')}/>
-                <Text>Welcome {user[0].username}!</Text>
+                <Text style={styles.title}>Welcome {user[0].username}!</Text>
             </View>
             <View>
-                <Text>Contact: {user[0].contact}</Text>
+                <Text style={styles.subtitle}>Contact: {user[0].contact}</Text>
                 <Button title="Update Contact"/>
 
                 <View style={styles.preferedAccessibility}>
@@ -47,7 +46,7 @@ export default function profile() {
                 </View>
                 <Button title="Update Prefered Accessibility"/>
 
-                <Text>Saved Events</Text>
+                <Text style={styles.title}>Saved Events</Text>
                 <ScrollView>
                     {savedEventsIndex.map((item, index) => (
                         <View key={index}>
@@ -56,7 +55,7 @@ export default function profile() {
                     ))}
                 </ScrollView>
 
-                <Text>RSVPed Events</Text>
+                <Text style={styles.title}>RSVPed Events</Text>
                 <ScrollView>
                     {rsvpEventsIndex.map((item, index) => (
                         <View key={index}>
@@ -87,9 +86,31 @@ const styles = StyleSheet.create({
     preferedAccessibility: {
         display: 'flex',
         flexDirection: 'column',
+        margin: 10,
+        padding: 20,
+        borderRadius: 10,
+        borderStyle: 'solid',
+        borderWidth: 2,
+        justifyContent: 'space-between',
+        fontStyle: 'italic',
+        borderColor: 'navy',
     },
     scrollContainer: {
         padding: 5,
         textAlign: 'center',
-    }
+    },
+    title: {
+        padding: 10,
+        fontSize: 36,
+        marginTop: 40,
+        marginBottom: 10,
+        color: 'navy',
+        fontWeight: 'bold',
+    },
+    subtitle: {
+        fontStyle: 'italic',
+        fontSize: 18,
+        color: 'navy',
+        margin: 10,
+    },
 });

@@ -37,10 +37,10 @@ const EventPopup = ({ visible, onClose, eventIndex }: { visible: boolean, onClos
                     </View>
                     <View style={styles.message}>
                         <View style={styles.sameLineOpp}>
-                            <Text>{eventdate}</Text>
-                            <Text>{cost}</Text>
+                            <Text style={styles.subtitle}>{eventdate}</Text>
+                            <Text style={styles.subtitle}>{cost}</Text>
                         </View>
-                        <Text>{eventtime}</Text>
+                        <Text style={styles.bigsubtitle}>{eventtime}</Text>
                         <Text style={styles.title}>{eventname}</Text>
                         <Text>{description}</Text>
                         <View style={styles.hr}/>
@@ -53,8 +53,8 @@ const EventPopup = ({ visible, onClose, eventIndex }: { visible: boolean, onClos
                             <Text>        Smell: {smell}</Text>
                             <Text>Wheelchair Accessibility: {wheelchair}</Text>
                         </View>
-                        <Text>Tags: {allTagsDisplay}</Text>
-                        <Text>RSVP: {rsvp}</Text>
+                        <Text style={styles.tags}>Tags: {allTagsDisplay}</Text>
+                        <Text style={styles.tags}>RSVP: {rsvp}</Text>
                     </View>
                     <Button title="Save"/>
                     <Button title="RSVP"/>
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
     },
     hr: {
         borderBottomWidth: 1,
-        borderBottomColor: 'blue',
+        borderBottomColor: 'navy',
         marginVertical: 20,
     },
     sameLine: {
@@ -105,13 +105,22 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 36,
-        marginTop: 10,
+        marginTop: 15,
         marginBottom: 10,
-        color: 'blue',
+        color: 'navy',
+        fontWeight: 'bold',
     },
     list: {
         display: 'flex',
         flexDirection: 'column',
+        margin: 10,
+        padding: 20,
+        borderRadius: 10,
+        borderStyle: 'solid',
+        borderWidth: 2,
+        justifyContent: 'space-between',
+        fontStyle: 'italic',
+        borderColor: 'navy',
     },
     backArrow: {
         position: 'absolute',
@@ -119,6 +128,30 @@ const styles = StyleSheet.create({
         left: 20,
         zIndex: 10,
     },
+    subtitle: {
+        fontStyle: 'italic',
+        fontSize: 18,
+        color: 'navy',
+        marginBottom: 10,
+    },
+    bigsubtitle: {
+        fontWeight: 'bold',
+        fontStyle: 'italic',
+        fontSize: 20,
+        marginBottom: 10,
+        color: 'navy',
+    },
+    tags: {
+        fontStyle: 'italic',
+        marginBottom: 10,
+        margin: 10,
+        padding: 20,
+        borderRadius: 10,
+        borderStyle: 'solid',
+        borderWidth: 2,
+        justifyContent: 'space-between',
+        borderColor: 'navy',
+    }
 });
 
 export default EventPopup;
