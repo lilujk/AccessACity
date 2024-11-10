@@ -869,8 +869,8 @@ export const EventsContext = createContext([
             "touch": "Low",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 170,
+        "ycord": 500,
         "rsvp": "info@buffalostartupexpo.com"
     },
     {
@@ -890,8 +890,8 @@ export const EventsContext = createContext([
             "touch": "Low",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 100,
+        "ycord": 340,
         "rsvp": "careercenter@buffalo.edu"
     },
     {
@@ -911,8 +911,8 @@ export const EventsContext = createContext([
             "touch": "Low",
             "smell": "Med"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 50,
+        "ycord": 330,
         "rsvp": "info@buffalowinterfest.org"
     },
     {
@@ -932,8 +932,8 @@ export const EventsContext = createContext([
             "touch": "Low",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 60,
+        "ycord": 270,
         "rsvp": "events@buffalomuseum.org"
     },
     {
@@ -953,8 +953,8 @@ export const EventsContext = createContext([
             "touch": "High",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 80,
+        "ycord": 300,
         "rsvp": "matthew_clark_56@outlook.com"
     },
     {
@@ -974,8 +974,8 @@ export const EventsContext = createContext([
             "touch": "Low",
             "smell": "High"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 115,
+        "ycord": 420,
         "rsvp": "info@buffalofoodtruckrally.com"
     },
     {
@@ -995,8 +995,8 @@ export const EventsContext = createContext([
             "touch": "Low",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 125,
+        "ycord": 370,
         "rsvp": "andrew_morris@buffaloroboticsleague.org"
     },
     {
@@ -1016,8 +1016,8 @@ export const EventsContext = createContext([
             "touch": "Low",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 120,
+        "ycord": 120,
         "rsvp": "laura_gibson87@gmail.com"
     },
     {
@@ -1037,19 +1037,19 @@ export const EventsContext = createContext([
             "touch": "Low",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 145,
+        "ycord": 385,
         "rsvp": "info@buffalotechsymposium.com"
     },
     {
-        "username": "buffalobills",
-        "eventname": "Buffalo Bills Home Game",
-        "description": "Join us at Highmark Stadium for a thrilling Buffalo Bills football game! Cheer on the team, enjoy the excitement of the game, and experience the electric atmosphere of game day.",
+        "username": "buffalobisons",
+        "eventname": "Buffalo Bisons Home Game",
+        "description": "Join us for a thrilling Buffalo Bisons Baseball game! Cheer on the team, enjoy the excitement of the game, and experience the electric atmosphere of game day.",
         "eventcity": "Buffalo",
         "eventstate": "NY",
         "eventdate": "12/01/2024",
         "eventtime": "01:00 PM - 04:00 PM",
-        "tags": ["football", "sports", "Buffalo Bills", "NFL"],
+        "tags": ["baseball", "sports", "Buffalo Bisons", "game"],
         "cost": "$$$",
         "accessibility": {
             "wheelchair": "High",
@@ -1058,9 +1058,9 @@ export const EventsContext = createContext([
             "touch": "Low",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
-        "rsvp": "info@buffalobills.com"
+        "xcord": 95,
+        "ycord": 400,
+        "rsvp": "info@buffalobisons.com"
     }
 ]);
 
