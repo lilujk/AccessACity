@@ -25,6 +25,46 @@ export default function Page() {
                     style={[styles.overlayImage, { top: 400, left: 235 }]}
                 />
               
+              <Image 
+                    source={require('../assets/images/location.png')}
+                    style={[styles.overlayImage, { top: 280, left: 110 }]}
+                />
+
+                <Image 
+                    source={require('../assets/images/location.png')}
+                    style={[styles.overlayImage, { top: 290, left: 120 }]}
+                />
+
+                <Image 
+                    source={require('../assets/images/location.png')}
+                    style={[styles.overlayImage, { top: 430, left: 270 }]}
+                />
+
+                <Image 
+                    source={require('../assets/images/location.png')}
+                    style={[styles.overlayImage, { top: 295, left: 115 }]}
+                />
+
+                <Image 
+                    source={require('../assets/images/location.png')}
+                    style={[styles.overlayImage, { top: 280, left: 95 }]}
+                />
+
+<Image 
+                    source={require('../assets/images/location.png')}
+                    style={[styles.overlayImage, { top: 285, left: 105 }]}
+                />
+
+<Image 
+                    source={require('../assets/images/location.png')}
+                    style={[styles.overlayImage, { top: 380, left: 280 }]}
+                />
+
+<Image 
+                    source={require('../assets/images/location.png')}
+                    style={[styles.overlayImage, { top: 315, left: 130 }]}
+                />
+
             </View>
         </View>
     );

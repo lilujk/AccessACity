@@ -659,8 +659,8 @@ export const EventsContext = createContext([
             "touch": "Low",
             "smell": "Low"
         },
-        "xcord": 440,
-        "ycord": 265,
+        "xcord": 265,
+        "ycord": 440,
         "rsvp": "events@albanygala.org"
     },
     {
@@ -680,8 +680,8 @@ export const EventsContext = createContext([
             "touch": "Low",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 235,
+        "ycord": 400,
         "rsvp": "mike_doe@startupmeetup.com"
     },
     {
@@ -701,8 +701,8 @@ export const EventsContext = createContext([
             "touch": "Low",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 280,
+        "ycord": 110,
         "rsvp": "events@albanywomeninbusiness.org"
     },
     {
@@ -722,8 +722,8 @@ export const EventsContext = createContext([
             "touch": "Low",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 120,
+        "ycord": 290,
         "rsvp": "career@ualbany.edu"
     },
     {
@@ -743,8 +743,8 @@ export const EventsContext = createContext([
             "touch": "Low",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 270,
+        "ycord": 430,
         "rsvp": "sarah_jones@holidayconcert.org"
     },
     {
@@ -764,8 +764,8 @@ export const EventsContext = createContext([
             "touch": "Low",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 115,
+        "ycord": 290,
         "rsvp": "peter_lam@techforgood.org"
     },
     {
@@ -785,8 +785,8 @@ export const EventsContext = createContext([
             "touch": "Low",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 95,
+        "ycord": 280,
         "rsvp": "lwong32@ualbany.edu"
     },
     {
@@ -806,8 +806,8 @@ export const EventsContext = createContext([
             "touch": "Low",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 105,
+        "ycord": 285,
         "rsvp": "lbrown2@ualbany.edu"
     },
     {
@@ -827,8 +827,8 @@ export const EventsContext = createContext([
             "touch": "High",
             "smell": "Med"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 300,
+        "ycord": 400,
         "rsvp": "ryanshaw02@icloud.com"
     },
     {
@@ -848,8 +848,8 @@ export const EventsContext = createContext([
             "touch": "Low",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 130,
+        "ycord": 315,
         "rsvp": "events@albanyhockey.org"
     },
     {
