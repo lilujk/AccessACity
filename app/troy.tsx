@@ -65,7 +65,9 @@ export default function Page() {
             eventIndex={selectedEventIndex?.toString() ?? ""}
         />
         )}
-        
+        <TouchableOpacity style={styles.navigationButton} onPress={() => router.push('/troyEvents')}>
+            <Text style={styles.buttonText}>Troy Events</Text>
+        </TouchableOpacity>
       </View>
     </View>
   )
@@ -107,5 +109,19 @@ const styles = StyleSheet.create({
     buttonImage: {
         width: '100%', // Full size of overlayButton
         height: '100%',
+    },
+    navigationButton: {
+        position: 'absolute',
+        bottom: 30,
+        paddingVertical: 12,
+        paddingHorizontal: 24,
+        backgroundColor: '#007AFF', // Blue color for visibility
+        borderRadius: 8,
+        alignSelf: 'center',
+    },
+    buttonText: {
+        color: 'white',
+        fontSize: 16,
+        fontWeight: 'bold',
     },
   });
