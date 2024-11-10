@@ -5,7 +5,6 @@ import EventOnDisplay from '@/components/EventOnDisplay';
 
 export default function tester() {
     const events = useEvents();
-    console.log(events[0].eventname);
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
