@@ -22,7 +22,9 @@ export default function Page() {
         setSelectedEventIndex(null);
     };
 
-    const troyEvents = events.filter(event => event.eventcity === "Troy" && event.eventstate === "NY");
+    const troyEvents = events
+        .map((event, index) => ({ ...event, originalIndex: index }))
+        .filter(event => event.eventcity === "Troy" && event.eventstate === "NY");
 
   return(
     <View style={styles.container}>
@@ -33,8 +35,8 @@ export default function Page() {
             source={require('../assets/images/troy.png')}
             style={styles.baseImage}
         />
-        {/* Overlay Images for Buffalo Events */}
-        {troyEvents.map((event, index) => {
+        {/* Overlay Images for Troy Events */}
+        {troyEvents.map((event) => {
           // Determine the icon color based on wheelchair accessibility
           let iconSource;
           if (event.accessibility.wheelchair === "High") {
@@ -47,8 +49,8 @@ export default function Page() {
 
           return (
             <Pressable 
-              key={index}
-              onPress={() => openPopup(index)}
+              key={event.originalIndex}
+              onPress={() => openPopup(event.originalIndex)}
               style={[styles.overlayButton, { top: event.ycord, left: event.xcord }]}
             >
               <Image 
