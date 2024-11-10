@@ -26,7 +26,13 @@ export default function HomeScreen() {
             <Text style={styles.title}>AccesACity</Text>
           </SafeAreaView>
           <Link href="/states" style={styles.button1}>TESTCOORDINATES</Link>
-
+          <View> 
+            <Image
+              source={require('../key.png')}
+              style={styles.imagebg}
+            />
+              
+          </View>
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>
@@ -79,10 +85,9 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
   imagebg: {
-    zIndex: 1,
-
-    height: height,
-    width: width,
+    zIndex: 2,
+    top: 0,
+    left: 0,
     position: 'absolute',
   },
   title: {
