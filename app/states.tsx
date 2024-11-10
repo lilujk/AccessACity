@@ -17,31 +17,31 @@ export default function Page() {
                     style={styles.baseImage}
                 />
                 {/* Overlay Image */}
-                <Pressable onPress={() => router.push('/buffalo')} style={[styles.overlayButton, { top: 350, left: 27  }]}>
+                <Pressable onPress={() => router.push('/buffalo')} style={[styles.overlayButton, { top: 375, left: 30  }]}>
                     <Image 
                         source={require('../assets/images/location.png')} //buffalo
                         style={[styles.overlayImage, {  }]}
                     />
                 </Pressable>
-                <Pressable onPress={() => router.push('/albany')} style={[styles.overlayButton, { top: 360, left: 265  }]}>
+                <Pressable onPress={() => router.push('/albany')} style={[styles.overlayButton, { top: 390, left: 285  }]}>
                     <Image 
                         source={require('../assets/images/location.png')} //albany
                         style={[styles.overlayImage, {  }]}
                     />
                 </Pressable>
-                <Pressable onPress={() => router.push('/saratoga-springs')} style={[styles.overlayButton, { top: 340, left: 277  }]}>
+                <Pressable onPress={() => router.push('/saratoga-springs')} style={[styles.overlayButton, { top: 360, left: 290  }]}>
                     <Image 
                         source={require('../assets/images/location.png')} //saratoga spring
                         style={[styles.overlayImage, {  }]}
                     />
                 </Pressable>
-                <Pressable onPress={() => router.push('/new-york-city')} style={[styles.overlayButton, { top: 485, left: 255  }]}>
+                <Pressable onPress={() => router.push('/new-york-city')} style={[styles.overlayButton, { top: 520, left: 275  }]}>
                     <Image 
                         source={require('../assets/images/location.png')} //NYC
                         style={[styles.overlayImage, {  }]}
                     />
                 </Pressable>
-                <Pressable onPress={() => router.push('/troy')} style={[styles.overlayButton, { top: 360, left: 280  }]}>
+                <Pressable onPress={() => router.push('/troy')} style={[styles.overlayButton, { top: 380, left: 300  }]}>
                     <Image 
                         source={require('../assets/images/location.png')} //troy
                         style={[styles.overlayImage, {  }]}
