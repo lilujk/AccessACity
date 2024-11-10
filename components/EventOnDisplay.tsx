@@ -1,6 +1,8 @@
 import { useEvents } from '@/hooks/useEvents';
 import React, { useState } from 'react';
-import { View, Text, Button, StyleSheet, SafeAreaView } from 'react-native';
+import { View, Text, Button, StyleSheet, SafeAreaView, Pressable } from 'react-native';
+import EventPopup from './EventPopup';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 interface EventOnDisplayProps {
     eventdate: string;
@@ -17,8 +19,6 @@ interface EventOnDisplayProps {
 const EventOnDisplay = ({eventIndex}: {eventIndex: string}) => {
     const events = useEvents();
     const eventIndexNum = parseInt(eventIndex, 10);
-    console.log("new");
-    console.log(eventIndexNum);
     const eventdate = events[eventIndexNum].eventdate;
     const eventname = events[eventIndexNum].eventname;
     const description = events[eventIndexNum].description;
@@ -28,6 +28,11 @@ const EventOnDisplay = ({eventIndex}: {eventIndex: string}) => {
     const touch = events[eventIndexNum].accessibility.touch;
     const smell = events[eventIndexNum].accessibility.smell;
     const cost = events[eventIndexNum].cost;
+
+    const [popupVisible, setPopupVisible] = useState(false);
+    const togglePopup = () => {
+        setPopupVisible(!popupVisible);
+    };
 
     let avgSensoryNum = 0;
 
@@ -59,7 +64,7 @@ const EventOnDisplay = ({eventIndex}: {eventIndex: string}) => {
     
     if (avgSensoryNum > 6) {
         avgSensory = "High";
-    } else if (avgSensoryNum > 2) {
+    } else if (avgSensoryNum > 1) {
         avgSensory = "Med";
     } else {
         avgSensory = "Low to None";
@@ -75,7 +80,7 @@ const EventOnDisplay = ({eventIndex}: {eventIndex: string}) => {
 
     return (
         <View style={styles.container}>
-            <View style={styles.eventContainer}>
+            <Pressable onPress={togglePopup} style={styles.eventContainer}>
                 <View style={styles.sameLineOpp}>
                     <Text>{eventdate}</Text>
                     <Text>{cost}</Text>
@@ -87,7 +92,13 @@ const EventOnDisplay = ({eventIndex}: {eventIndex: string}) => {
                     <Text>Sensory: {avgSensory}</Text>
                     <Text>Wheelchair Accessibility: {wheelchair}</Text>
                 </View>
-            </View>
+
+                <EventPopup 
+                    visible={popupVisible}
+                    onClose={togglePopup}
+                    eventIndex={eventIndex}
+                />
+            </Pressable>
         </View>
     )
 };
@@ -109,6 +120,7 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderColor: 'blue',
         padding: 20,
+        width: 400,
     },
     hr: {
         borderBottomWidth: 1,

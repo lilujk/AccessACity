@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Platform, SafeAreaView, Text} from 'react-native';
+import { Image, StyleSheet, Platform, SafeAreaView, ScrollView, Text} from 'react-native';
 import React from 'react';
 import { useEvents } from '@/hooks/useEvents';
 import EventOnDisplay from '@/components/EventOnDisplay';
@@ -8,7 +8,13 @@ export default function tester() {
     console.log(events[0].eventname);
     return (
         <SafeAreaView style={styles.container}>
-            <EventOnDisplay eventIndex='0'/>
+            <ScrollView>
+                <EventOnDisplay eventIndex='0'/>
+                <EventOnDisplay eventIndex='1'/>
+                <EventOnDisplay eventIndex='2'/>
+                <EventOnDisplay eventIndex='3'/>
+                <EventOnDisplay eventIndex='4'/>
+            </ScrollView>
         </SafeAreaView>
     );
 }
