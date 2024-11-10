@@ -11,49 +11,29 @@ export default function Page() {
             <View style={styles.imageContainer}>
                 {/* Base Image */}
                 <Image 
-                    source={require('../assets/images/buffalo.png')}
+                    source={require('../assets/images/new york.png')}
                     style={styles.baseImage}
                 />
                 {/* Overlay Image */}
                 <Image 
-                    source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 400, left: 95 }]}
+                    source={require('../assets/images/location.png')} //buffalo
+                    style={[styles.overlayImage, { top: 340, left: 20 }]}
                 />
                 <Image 
-                    source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 385, left: 145 }]}
+                    source={require('../assets/images/location.png')} //albany
+                    style={[styles.overlayImage, { top: 355, left: 275 }]}
                 />
                 <Image 
-                    source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 120, left: 120 }]}
+                    source={require('../assets/images/location.png')} //saratoga spring
+                    style={[styles.overlayImage, { top: 330, left: 270 }]}
                 />
                 <Image 
-                    source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 370, left: 125 }]}
+                    source={require('../assets/images/location.png')} //NYC
+                    style={[styles.overlayImage, { top: 480, left: 260 }]}
                 />
                 <Image 
-                    source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 420, left: 115 }]}
-                />
-                <Image 
-                    source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 300, left: 80 }]}
-                />
-                <Image 
-                    source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 270, left: 60 }]}
-                />
-                <Image 
-                    source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 330, left: 50 }]}
-                />
-                <Image 
-                    source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 340, left: 100 }]}
-                />
-                <Image 
-                    source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 500, left: 170 }]}
+                    source={require('../assets/images/location.png')} //troy
+                    style={[styles.overlayImage, { top: 345, left: 285 }]}
                 />
             </View>
         </View>
