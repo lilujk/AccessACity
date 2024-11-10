@@ -11,49 +11,49 @@ export default function Page() {
             <View style={styles.imageContainer}>
                 {/* Base Image */}
                 <Image 
-                    source={require('../assets/images/saratoga springs.png')}
+                    source={require('../assets/images/new york city.png')}
                     style={styles.baseImage}
                 />
                 {/* Overlay Image */}
                 <Image 
                     source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 380, left: 95 }]}
+                    style={[styles.overlayImage, { top: 290, left: 170 }]}
                 />
                 <Image 
                     source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 300, left: 250 }]}
+                    style={[styles.overlayImage, { top: 315, left: 155 }]}
                 />
                 <Image 
                     source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 410, left: 230 }]}
+                    style={[styles.overlayImage, { top: 350, left: 150 }]}
                 />
                 <Image 
                     source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 350, left: 280 }]}
+                    style={[styles.overlayImage, { top: 355, left: 230 }]}
                 />
                 <Image 
                     source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 380, left: 260 }]}
+                    style={[styles.overlayImage, { top: 440, left: 205 }]}
                 />
                 <Image 
                     source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 420, left: 50 }]}
+                    style={[styles.overlayImage, { top: 420, left: 140 }]}
                 />
                 <Image 
                     source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 325, left: 100 }]}
+                    style={[styles.overlayImage, { top: 370, left: 210 }]}
                 />
                 <Image 
                     source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 340, left: 40 }]}
+                    style={[styles.overlayImage, { top: 335, left: 165 }]}
                 />
                 <Image 
                     source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 320, left: 85 }]}
+                    style={[styles.overlayImage, { top: 400, left: 155 }]}
                 />
                 <Image 
                     source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 400, left: 120 }]}
+                    style={[styles.overlayImage, { top: 415, left: 170 }]}
                 />
             </View>
         </View>
