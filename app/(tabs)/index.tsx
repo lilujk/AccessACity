@@ -23,6 +23,8 @@ export default function HomeScreen() {
             <Text>{events[49].eventstate}</Text>
           </SafeAreaView>
           <Link href="/testCoordinates" style={styles.button1}>TESTCOORDINATES</Link>
+          <Link href="/testCoordinates2" style={styles.button1}>TESTCOORDINATES2</Link>
+
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>

@@ -659,8 +659,8 @@ export const EventsContext = createContext([
             "touch": "Low",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 440,
+        "ycord": 265,
         "rsvp": "events@albanygala.org"
     },
     {
