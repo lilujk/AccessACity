@@ -29,8 +29,8 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "Med"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 80,
+        "ycord": 375,
         "rsvp": "manger@troymarket.org"
     },
     {
@@ -50,8 +50,8 @@ export const EventsContext = createContext([
             "touch": "Med",
             "smell": "High"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 200,
+        "ycord": 40,
         "rsvp": "ksmith23@gmail.com"
     },
     {
@@ -71,8 +71,8 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "Low to none"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 115,
+        "ycord": 280,
         "rsvp": "hangaronthehudson@gmail.com"
     },
     {
@@ -92,8 +92,8 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "Low to none"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 130,
+        "ycord": 390,
         "rsvp": "dlee17@rpi.edu"
     },
     {
@@ -113,8 +113,8 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "Low to none"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 145,
+        "ycord": 370,
         "rsvp": "rkim41@rpi.edu"
     },
     {
@@ -134,8 +134,8 @@ export const EventsContext = createContext([
             "touch": "Med",
             "smell": "Med"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 190,
+        "ycord": 405,
         "rsvp": "jroberts@gmail.com"
     },
     {
@@ -155,14 +155,14 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "Low to none"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 110,
+        "ycord": 440,
         "rsvp": "npatel22@yahoo.com"
     },
     {
         "username": "pjackson",
-        "eventname": "Midnight Dance Party at The Loft",
-        "description": "Get ready for an electrifying night of dancing and fun at The Loft! Featuring a live DJ, drink specials, and an unforgettable atmosphere.",
+        "eventname": "Midnight Dance Party at The Tipsy Moose!",
+        "description": "Get ready for an electrifying night of dancing and fun at The Tipsy Moose! Featuring a live DJ, drink specials, and an unforgettable atmosphere.",
         "eventcity": "Troy",
         "eventstate": "NY",
         "eventdate": "11/15/2024",
@@ -176,8 +176,8 @@ export const EventsContext = createContext([
             "touch": "High",
             "smell": "Low to none"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 90,
+        "ycord": 570,
         "rsvp": "pjackson@gmail.com"
     },
     {

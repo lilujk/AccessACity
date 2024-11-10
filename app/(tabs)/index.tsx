@@ -8,6 +8,7 @@ import { useEvents } from '@/hooks/useEvents';
 import React from 'react';
 import { Link } from 'expo-router';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
+import { View } from 'react-native';
 import { setBackgroundColorAsync } from 'expo-system-ui';
 
 
@@ -16,17 +17,16 @@ export default function HomeScreen() {
   return (
     //View is just a div in react, there is a equivalent to all html elements in react
     <SafeAreaProvider>
-    <SafeAreaView >
-    <ScrollView >
       <SafeAreaView style={styles.container}>
-        <Text>{events[49].eventstate}</Text>
+        <ScrollView style={styles.container}>
+          <SafeAreaView style={styles.container}>
+            <Text>{events[49].eventstate}</Text>
+          </SafeAreaView>
+          <Link href="/testCoordinates">TESTCOORDINATES</Link>
+        </ScrollView>
       </SafeAreaView>
-      <Link href="/testCoordinates">TESTCOORDINATES</Link>
-    </ScrollView>
-    </SafeAreaView>
     </SafeAreaProvider>
-
-    
+ 
   );
 }
 
@@ -36,6 +36,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'white',
+  },
+  innerContainer: {
+    padding: 16,
   },
   titleContainer: {
     flexDirection: 'row',
