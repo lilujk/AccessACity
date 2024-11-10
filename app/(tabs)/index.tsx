@@ -106,6 +106,8 @@ const styles = StyleSheet.create({
   text1: {
     flex: 1,
     zIndex: 2,
+    color: 'navy',
+    fontWeight: 'bold',
     top: 350,
     alignItems: 'center',
     justifyContent: 'center',
