@@ -1,3 +1,4 @@
+import { useEvents } from '@/hooks/useEvents';
 import React, { useState } from 'react';
 import { View, Text, Button, StyleSheet, SafeAreaView } from 'react-native';
 
@@ -13,8 +14,20 @@ interface EventOnDisplayProps {
     cost:  string;
 }
 
-const EventOnDisplay: React.FC<EventOnDisplayProps> = ({eventdate, eventname, description, wheelchair, sight, sound, touch, smell, cost}) => {
-    console.log(eventname, description, wheelchair, sight, sound, touch, smell, cost);
+const EventOnDisplay = ({eventIndex}: {eventIndex: string}) => {
+    const events = useEvents();
+    const eventIndexNum = parseInt(eventIndex, 10);
+    console.log("new");
+    console.log(eventIndexNum);
+    const eventdate = events[eventIndexNum].eventdate;
+    const eventname = events[eventIndexNum].eventname;
+    const description = events[eventIndexNum].description;
+    const wheelchair = events[eventIndexNum].accessibility.wheelchair;
+    const sight = events[eventIndexNum].accessibility.sight;
+    const sound = events[eventIndexNum].accessibility.sound;
+    const touch = events[eventIndexNum].accessibility.touch;
+    const smell = events[eventIndexNum].accessibility.smell;
+    const cost = events[eventIndexNum].cost;
 
     let avgSensoryNum = 0;
 
@@ -46,7 +59,7 @@ const EventOnDisplay: React.FC<EventOnDisplayProps> = ({eventdate, eventname, de
     
     if (avgSensoryNum > 6) {
         avgSensory = "High";
-    } else if (avgSensoryNum > 3) {
+    } else if (avgSensoryNum > 2) {
         avgSensory = "Med";
     } else {
         avgSensory = "Low to None";
@@ -72,7 +85,7 @@ const EventOnDisplay: React.FC<EventOnDisplayProps> = ({eventdate, eventname, de
                 <View style={styles.hr}/>
                 <View style={styles.sameLine}>
                     <Text>Sensory: {avgSensory}</Text>
-                    <Text>Wheelchair: {wheelchair}</Text>
+                    <Text>Wheelchair Accessibility: {wheelchair}</Text>
                 </View>
             </View>
         </View>
