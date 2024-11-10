@@ -22,7 +22,7 @@ export default function HomeScreen() {
           <SafeAreaView style={styles.container}>
             <Text>{events[49].eventstate}</Text>
           </SafeAreaView>
-          <Link href="/testCoordinates">TESTCOORDINATES</Link>
+          <Link href="/testCoordinates" style={styles.button1}>TESTCOORDINATES</Link>
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>
@@ -35,12 +35,14 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    padding: 20,
     backgroundColor: 'white',
   },
   innerContainer: {
     padding: 16,
   },
   titleContainer: {
+    
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
@@ -48,6 +50,11 @@ const styles = StyleSheet.create({
   stepContainer: {
     gap: 8,
     marginBottom: 8,
+  },
+  button1: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   reactLogo: {
     height: 178,
