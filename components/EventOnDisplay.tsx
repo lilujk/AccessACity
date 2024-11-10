@@ -4,18 +4,6 @@ import { View, Text, Button, StyleSheet, SafeAreaView, Pressable } from 'react-n
 import EventPopup from './EventPopup';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
-interface EventOnDisplayProps {
-    eventdate: string;
-    eventname: string;
-    description: string;
-    wheelchair: string;
-    sight:  string;
-    sound:  string;
-    touch: string;
-    smell: string;
-    cost:  string;
-}
-
 const EventOnDisplay = ({eventIndex}: {eventIndex: string}) => {
     const events = useEvents();
     const eventIndexNum = parseInt(eventIndex, 10);
