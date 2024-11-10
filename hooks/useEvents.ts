@@ -29,8 +29,8 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "Med"
         },
-        "xcord": 80,
-        "ycord": 375,
+        "xcord":95,
+        "ycord": 420,
         "rsvp": "manger@troymarket.org"
     },
     {
@@ -50,8 +50,8 @@ export const EventsContext = createContext([
             "touch": "Med",
             "smell": "High"
         },
-        "xcord": 200,
-        "ycord": 40,
+        "xcord": 220,
+        "ycord": 30,
         "rsvp": "ksmith23@gmail.com"
     },
     {
@@ -71,8 +71,8 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "Low to none"
         },
-        "xcord": 115,
-        "ycord": 280,
+        "xcord": 130,
+        "ycord": 320,
         "rsvp": "hangaronthehudson@gmail.com"
     },
     {
@@ -92,8 +92,8 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "Low to none"
         },
-        "xcord": 130,
-        "ycord": 390,
+        "xcord": 160,
+        "ycord": 400,
         "rsvp": "dlee17@rpi.edu"
     },
     {
@@ -114,7 +114,7 @@ export const EventsContext = createContext([
             "smell": "Low to none"
         },
         "xcord": 145,
-        "ycord": 370,
+        "ycord": 410,
         "rsvp": "rkim41@rpi.edu"
     },
     {
@@ -134,8 +134,8 @@ export const EventsContext = createContext([
             "touch": "Med",
             "smell": "Med"
         },
-        "xcord": 190,
-        "ycord": 405,
+        "xcord": 170,
+        "ycord": 430,
         "rsvp": "jroberts@gmail.com"
     },
     {
@@ -155,8 +155,8 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "Low to none"
         },
-        "xcord": 110,
-        "ycord": 440,
+        "xcord": 130,
+        "ycord": 470,
         "rsvp": "npatel22@yahoo.com"
     },
     {
@@ -176,8 +176,8 @@ export const EventsContext = createContext([
             "touch": "High",
             "smell": "Low to none"
         },
-        "xcord": 90,
-        "ycord": 570,
+        "xcord": 105,
+        "ycord": 610,
         "rsvp": "pjackson@gmail.com"
     },
     {
@@ -197,8 +197,8 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "High"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 140,
+        "ycord": 590,
         "rsvp": "kathywhite@gmail.com"
     }, 
     {
@@ -218,8 +218,8 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "High"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 85,
+        "ycord": 455,
         "rsvp": "graymerman@icloud.com"
     },
     {
@@ -239,8 +239,8 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "Low to none"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 95,
+        "ycord": 380,
         "rsvp": "asmith456@spac.org"
     },
     {
@@ -260,8 +260,8 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "High"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 250,
+        "ycord": 300,
         "rsvp": "olivia_rose23@yahoo.com"
     },
     {
@@ -281,8 +281,8 @@ export const EventsContext = createContext([
             "touch": "Low",
             "smell": "Low to none"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 230,
+        "ycord": 410,
         "rsvp": "nathan2bell@gmail.com"
     },
     {
@@ -302,8 +302,8 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "Low to none"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 280,
+        "ycord": 350,
         "rsvp": "lucy_james@hotmail.com"
     },
     {
@@ -323,8 +323,8 @@ export const EventsContext = createContext([
             "touch": "High",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 260,
+        "ycord": 380,
         "rsvp": "emmajbrown@gmail.com"
     },
     {
@@ -344,8 +344,8 @@ export const EventsContext = createContext([
             "touch": "High",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 50,
+        "ycord": 420,
         "rsvp": "davidsharey@icloud.com"
     },
     {
@@ -365,8 +365,8 @@ export const EventsContext = createContext([
             "touch": "Med",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 100,
+        "ycord": 325,
         "rsvp": "elizabeth_green@saratogaschools.org"
     },
     {
@@ -386,8 +386,8 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 40,
+        "ycord": 340,
         "rsvp": "matthewjones@gmail.com"
     },
     {
@@ -407,8 +407,8 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 85,
+        "ycord": 320,
         "rsvp": "sophie_miller@saratogaschools.org"
     },
     {
@@ -428,8 +428,8 @@ export const EventsContext = createContext([
             "touch": "Med",
             "smell": "Low"
         },
-        "xcord": null,
-        "ycord": null,
+        "xcord": 120,
+        "ycord": 400,
         "rsvp": "caleb_rogers@ssevent.org"
     },
     {

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text } from 'react-native';
-import { View, StyleSheet, Image } from 'react-native';
+import { Text, View, StyleSheet, Image, TouchableOpacity  } from 'react-native';
+import { Link } from 'expo-router';
 import { useEvents } from '@/hooks/useEvents';
 
 export default function Page() {
@@ -11,41 +11,49 @@ export default function Page() {
             <View style={styles.imageContainer}>
                 {/* Base Image */}
                 <Image 
-                    source={require('../assets/images/troy.png')}
+                    source={require('../assets/images/saratoga springs.png')}
                     style={styles.baseImage}
                 />
                 {/* Overlay Image */}
                 <Image 
                     source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 375, left: 80 }]}
+                    style={[styles.overlayImage, { top: 380, left: 95 }]}
                 />
                 <Image 
                     source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 40, left: 200 }]}
+                    style={[styles.overlayImage, { top: 300, left: 250 }]}
                 />
                 <Image 
                     source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 280, left: 115 }]}
+                    style={[styles.overlayImage, { top: 410, left: 230 }]}
                 />
                 <Image 
                     source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 390, left: 130 }]}
+                    style={[styles.overlayImage, { top: 350, left: 280 }]}
                 />
                 <Image 
                     source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 370, left: 145 }]}
+                    style={[styles.overlayImage, { top: 380, left: 260 }]}
                 />
                 <Image 
                     source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 405, left: 190 }]}
+                    style={[styles.overlayImage, { top: 420, left: 50 }]}
                 />
                 <Image 
                     source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 440, left: 110 }]}
+                    style={[styles.overlayImage, { top: 325, left: 100 }]}
                 />
                 <Image 
                     source={require('../assets/images/location.png')}
-                    style={[styles.overlayImage, { top: 570, left: 90 }]}
+                    style={[styles.overlayImage, { top: 340, left: 40 }]}
+                />
+                <Image 
+                    source={require('../assets/images/location.png')}
+                    style={[styles.overlayImage, { top: 320, left: 85 }]}
+                />
+                <Image 
+                    source={require('../assets/images/location.png')}
+                    style={[styles.overlayImage, { top: 400, left: 120 }]}
                 />
             </View>
         </View>
@@ -70,8 +78,8 @@ const styles = StyleSheet.create({
     },
     overlayImage: {
         position: 'absolute',
-        width: 100, // set desired width for overlay image
-        height: 100, // set desired height for overlay image
+        width: 65, // set desired width for overlay image
+        height: 65, // set desired height for overlay image
         top: '40%', // adjust positioning as needed
         left: '40%',
     },
