@@ -29,7 +29,7 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "Med"
         },
-        "xcord":95,
+        "xcord":115,
         "ycord": 420,
         "rsvp": "manger@troymarket.org"
     },
@@ -50,7 +50,7 @@ export const EventsContext = createContext([
             "touch": "Med",
             "smell": "High"
         },
-        "xcord": 220,
+        "xcord": 240,
         "ycord": 30,
         "rsvp": "ksmith23@gmail.com"
     },
@@ -71,7 +71,7 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "Low to none"
         },
-        "xcord": 130,
+        "xcord": 150,
         "ycord": 320,
         "rsvp": "hangaronthehudson@gmail.com"
     },
@@ -92,7 +92,7 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "Low to none"
         },
-        "xcord": 160,
+        "xcord": 180,
         "ycord": 400,
         "rsvp": "dlee17@rpi.edu"
     },
@@ -113,7 +113,7 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "Low to none"
         },
-        "xcord": 145,
+        "xcord": 165,
         "ycord": 410,
         "rsvp": "rkim41@rpi.edu"
     },
@@ -134,7 +134,7 @@ export const EventsContext = createContext([
             "touch": "Med",
             "smell": "Med"
         },
-        "xcord": 170,
+        "xcord": 190,
         "ycord": 430,
         "rsvp": "jroberts@gmail.com"
     },
@@ -155,7 +155,7 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "Low to none"
         },
-        "xcord": 130,
+        "xcord": 150,
         "ycord": 470,
         "rsvp": "npatel22@yahoo.com"
     },
@@ -176,7 +176,7 @@ export const EventsContext = createContext([
             "touch": "High",
             "smell": "Low to none"
         },
-        "xcord": 105,
+        "xcord": 125,
         "ycord": 610,
         "rsvp": "pjackson@gmail.com"
     },
@@ -197,7 +197,7 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "High"
         },
-        "xcord": 140,
+        "xcord": 160,
         "ycord": 590,
         "rsvp": "kathywhite@gmail.com"
     }, 
@@ -218,7 +218,7 @@ export const EventsContext = createContext([
             "touch": "Low to none",
             "smell": "High"
         },
-        "xcord": 85,
+        "xcord": 105,
         "ycord": 455,
         "rsvp": "graymerman@icloud.com"
     },
