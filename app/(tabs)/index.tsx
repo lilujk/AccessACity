@@ -12,7 +12,7 @@ export default function HomeScreen() {
   return (
     //View is just a div in react, there is a equivalent to all html elements in react
     <SafeAreaView style={styles.container}>
-      <Text>{events[0].Name}</Text>
+      <Text>{events[49].eventstate}</Text>
     </SafeAreaView>
   );
 }
